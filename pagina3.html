@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Curiosidades Mitológicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center">Registros do Olimpo</h1>
+    <p align="center"><a href="index.html">Voltar para a página inicial</a></p>
+    <hr>
+
+    <h2>1. Arquivos Divinos (Listas)</h2>
+
+    <h3>Irmãos de Zeus (Lista Ordenada - Romana)</h3>
+    
+    <!-- Lista ordenada -->
+    <ol type="I">
+        <li>Héstia</li>
+        <li>Hades</li>
+        <li>Poseidon</li>
+        <li>Hera</li>
+    </ol>
+
+    <h3>Itens de Poder (Lista Não Ordenada - Quadrada)</h3>
+    <!-- Lista não ordenada usando quadrados -->
+    <ul type="square">
+        <li>Raio Mestre (Zeus)</li>
+        <li>Tridente (Poseidon)</li>
+        <li>Elmo das Trevas (Hades)</li>
+    </ul>
+
+    <h3>Dicionário Mitológico (Lista de Definição)</h3>
+    <!-- Lista de definição -->
+    <dl>
+        <dt><b>Néctar</b></dt>
+        <dd>A bebida dos deuses, que lhes garantia a imortalidade.</dd>
+        
+        <dt><b>Ambrósia</b></dt>
+        <dd>A comida dos deuses do Olimpo, extremamente doce e curativa.</dd>
+    </dl>
+    <hr>
+
+    <h2>2. Panteão em Dados (Tabelas)</h2>
+    
+    <!-- Tabela usando border, width, cellpadding e cellspacing -->
+    <center>
+        <table border="1" width="80%" cellpadding="5" cellspacing="0">
+            <tr>
+                <th colspan="3" bgcolor="#b8860b">
+                    <font color="white">Correspondência Grego-Romana</font>
+                </th>
+            </tr>
+            
+            <tr bgcolor="#e0d6c8">
+                <th>Deus Grego</th>
+                <th>Nome Romano</th>
+                <th>Domínio Principal</th>
+            </tr>
+            
+            <tr align="center">
+                <td>Zeus</td>
+                <td>Júpiter</td>
+                <td>Céus e Trovões</td>
+            </tr>
+            <tr align="center">
+                <td>Poseidon</td>
+                <td>Netuno</td>
+                <td>Mares e Terremotos</td>
+            </tr>
+            <tr align="center">
+                <td>Hades</td>
+                <td>Plutão</td>
+                <td>Submundo</td>
+            </tr>
+        </table>
+    </center>
+    <hr>
+
+    <h2>3. Oferenda aos Deuses (Formulário)</h2>
+    <p>Preencha seus dados para enviar sua prece aos deuses:</p>
+
+    <form action="#" method="get">
+        <p>
+            <b>Seu nome de mortal:</b><br>
+            <input type="text" name="nome" size="40" placeholder="Ex: Hércules">
+        </p>
+
+        <!-- Botões de Rádio (Múltipla escolha, apenas 1 opção) -->
+        <p>
+            <b>Para qual deus é a sua oferenda?</b><br>
+            <input type="radio" name="deus_escolhido" value="zeus"> Zeus <br>
+            <input type="radio" name="deus_escolhido" value="poseidon"> Poseidon <br>
+            <input type="radio" name="deus_escolhido" value="hades"> Hades <br>
+        </p>
+
+        <!-- Checkbox -->
+        <p>
+            <b>O que você deseja em troca? (Pode escolher mais de um)</b><br>
+            <input type="checkbox" name="desejo1" value="forca"> Força de um Titã <br>
+            <input type="checkbox" name="desejo2" value="sabedoria"> Sabedoria de Atena <br>
+            <input type="checkbox" name="desejo3" value="riqueza"> Ouro do Submundo <br>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar Prece">
+            <input type="reset" value="Limpar Formulário">
+        </p>
+    </form>
+
+</body>
+</html>
