@@ -1,1 +1,140 @@
+H1 {
+    font-family: Arial;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #807e00; /*atualizado*/
+    background-color: #cde1ff; /*atualizado*/
+    text-align: center;
+    padding: 4pt;
+    border-top: inset;
+    border-bottom: inset;
+    position: relative;
+    border-style: solid;
+}
 
+H2 {
+    font-family: Arial;
+    font-size: x-large;
+    font-weight: bold;
+    color: #e2ccff; /*atualizado*/
+    background-color: #750080; /*atualizado*/
+    text-align: center;
+    padding: 3pt;
+    border-top: inset;
+    border-bottom: inset;
+    position: relative;
+}
+
+H3 {
+    font-family: Arial;
+    font-size: large;
+    font-weight: bold;
+    color: #800031; /*atualizado*/
+    background-color: #805300; /*atualizado*/
+    text-align: center;
+    border-top: inset;
+    border-bottom: inset;
+    position: relative;
+}
+
+A {
+    font-family: Arial;
+    font-weight: bold;
+    color: #0000FF;
+    text-decoration: underline;
+    position: relative;
+}
+
+A:LINK {
+    font-family: Arial;
+    font-weight: bold;
+    color: #0000FF;
+    text-decoration: underline;
+    position: relative;
+}
+
+A:VISITED {
+    font-family: Arial;
+    font-weight: bold;
+    color: #800080;
+    text-decoration: underline;
+    position: relative;
+}
+
+B {
+    font-family: Arial;
+    font-weight: bold;
+    color: #800000;
+    position: relative;
+}
+
+I {
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+}
+
+LI {
+    font-family: Arial;
+    font-size: medium;
+    color: #000080;
+    position: relative;
+}
+
+P {
+    font-family: Arial;
+    font-size: 12pt; /*atualizado*/
+    color: #000080;
+    position: relative;
+}
+
+TD {
+    font-family: sans-serif;
+    font-size: medium;
+    background: #99CCCC;
+}
+
+TH {
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #FF0000;
+    background: #FFFF00;
+    text-align: center;
+    position: relative;
+}
+
+PRE {
+    font-family: monospace;
+    font-size: medium;
+    background: #CCFFFF;
+    position: relative;
+    left: 1cm;
+}
+
+.first {
+    border-top: ridge;
+    border-left: ridge;
+    position: relative;
+    border-width: thin; /*atualizado*/
+}
+
+.last {
+    border-bottom: ridge;
+    border-right: ridge;
+    border-width: thin; /*atualizado*/
+}
+
+/*atualizado*/
+.highlight{
+    background-color: #FFFF00;
+}
+
+/*atualizado*/
+.ufo{
+   font-family: monospace;
+   font-size: large;
+   color: #00FF00; 
+   background-color: #000000;
+}
