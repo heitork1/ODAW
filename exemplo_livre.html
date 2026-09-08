@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Consumo de água</title>
+</head>
+<body>
+  <h1>Controle de água</h1>
+
+  <p id="mensagem"></p>
+
+  <img id="imagemAgua" src="" width="250" alt="Resultado do consumo de água">
+
+  <script>
+    const nome = prompt("Digite seu nome:");
+    const copos = Number(prompt("Quantos copos de água você tomou hoje?"));
+
+    const imagem = document.getElementById("imagemAgua");
+    const mensagem = document.getElementById("mensagem");
+
+    if (copos >= 8) {
+      imagem.src = "assets/agua-ok.png";
+      imagem.alt = "Meta de água atingida";
+
+      mensagem.textContent =
+        `Parabéns, ${nome}! Você tomou ${copos} copos de água e atingiu a meta diária.`;
+    } else {
+      imagem.src = "assets/agua-pouca.png";
+      imagem.alt = "Meta de água não atingida";
+
+      mensagem.textContent =
+        `${nome}, você tomou apenas ${copos} copos de água. A meta diária é de 8 copos.`;
+    }
+  </script>
+</body>
+</html>

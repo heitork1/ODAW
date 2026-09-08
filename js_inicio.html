@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <TITLE> </TITLE>
+</head>
+<SCRIPT>
+
+    function AltMaiusc() {
+        document.TCheck.Muda.value = document.TCheck.Muda.value.toUpperCase()
+        document.TCheck.Opt1.checked = false
+    }
+    function AltMinusc() {
+        document.TCheck.Muda.value = document.TCheck.Muda.value.toLowerCase()
+        document.TCheck.Opt2.checked = false
+    }
+
+    function TestaVal() {
+        if (document.TesteSub.Teste.value == "") {
+            alert("Campo nao Preenchido...Form nao Submetido")
+            return false
+        }
+        else {
+            alert("Tudo Ok....Form Submetido")
+            return true
+        }
+    }
+
+    let date = new Date()
+    let horaAtual = date.getHours();
+    let diaSemana =  date.getDay();
+    let diaMes = date.getDate();
+    let mes = date.getMonth() + 1;
+    let ano = date.getFullYear();
+
+    verificaHora(horaAtual)
+    var saudacao;
+    function verificaHora(horaAtual){
+        switch (true){
+            case horaAtual < 12:
+                saudacao = 'Bom dia'
+                break;
+            case horaAtual < 18:
+                saudacao = 'Boa tarde'
+                break;
+            default:
+                saudacao = 'Boa noite'
+                break;
+        }
+    }
+
+    switch (diaSemana){
+        case 1:
+            diaSemana = 'Segunda Feira'
+            break;
+        case 2:
+            diaSemana = 'Terça Feira'
+            break;
+        case 3:
+            diaSemana = 'Terça Feira'
+            break;
+        case 4:
+            diaSemana = 'Quarta Feira'
+            break;
+        case 5:
+            diaSemana = 'Quinta Feira'
+            break;
+        case 6:
+            diaSemana = 'Sexta Feira'
+            break;
+        case 7:
+            diaSemana = 'Sabado'
+            break;
+        case 0:
+            diaSemana = 'Domingo'
+            break;
+    }
+
+
+    const nome = prompt("Qual o seu nome?")
+
+    alert(`${saudacao}, ${nome}, hoje é: ${diaSemana}, ${diaMes}/${mes}/${ano}`)
+    // let saudacaoAtual
+    // const nome = promt("")
+    
+
+
+</SCRIPT>
+
+<body>
+    <!-- 1-Faça um formulário com 3 campos de texto, 
+         alterar para letras maiúsculas e minúsculas através 
+         de checkbox. Ver exemplo 6. -->
+
+    <form name="TCheck">
+        Muda Case <input type=text size=20 maxlength=20 name="Muda"> </p>
+        <p>
+            Minusculo<input type=checkbox name="Opt1" value="1" checked onclick="if (this.checked) 
+                                   { AltMinusc() } ">
+            Maiusculo<input type=checkbox name="Opt2" value="2" onclick="if (this.checked) 
+                                   { AltMaiusc() } ">
+            Demo valor<input type=checkbox name="Opt3" onclick="if (Opt3.checked) 
+                                     {alert ('Server recebera = ' + Muda.value) } ">
+        </p>
+    </form>
+
+    <!-- 2- Crie um formulário com 4 campos, sendo todos obrigatórios. 
+    Na submissão, verificar se os dados obrigatórios foram 
+    informados, mostre o Erro ocorrido ou 'Sucesso' através 
+    de janela alert. Ver exemplo 10. -->
+
+    <form method="POST" name="TesteSub" onSubmit="return TestaVal()" action="teste.html">
+        Digite um Texto
+        <input type=text size=10 maxlength=10 name="Teste" value="">
+        Botao Submit
+        <input type=submit name="Bsub" value="Manda p/Server">
+        </p>
+    </form>
+
+    
+    <a href="exemplo_livre.html">Exemplo livre</a>
+</body>
+
+</html>
